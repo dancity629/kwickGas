@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWICK GAS - Fast & Reliable Gas Delivery</title>
+    <style>
+        /* CSS Variables for consistent branding */
+        :root {
+            --primary: #2ecc71;
+            --secondary: #27ae60;
+            --dark: #2c3e50;
+            --light: #f4f7f6;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, #34495e 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        /* Features Section */
+        .section-padding {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        /* How It Works Section */
+        .steps {
+            background: #ecf0f1;
+        }
+
+        .step-number {
+            background: var(--dark);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>🔥 KWICK GAS</h1>
+        <p>Smart, safe, and reliable cooking gas delivery at your fingertips. Never run out of fuel again.</p>
+        <div class="btn-container">
+            <a href="src\login.html" class="btn btn-primary">Login Now</a>
+            <a href="src\signup.html" class="btn btn-secondary">Create Account</a>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <h2>Why Choose KWICK GAS?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Dynamic Pricing</h3>
+                <p>Enjoy transparent and real-time gas rates updated daily to give you the best value.</p>
+            </div>
+            <div class="card">
+                <h3>Flexible Slots</h3>
+                <p>Choose between Morning, Afternoon, or Evening deliveries to fit your busy schedule.</p>
+            </div>
+            <div class="card">
+                <h3>Secure Payments</h3>
+                <p>Pay via Bank Transfer, Card, or Cash on Delivery—all with secure transaction tracking.</p>
+            </div>
+            <div class="card">
+                <h3>Doorstep Delivery</h3>
+                <p>Sit back and relax while our professionals handle the heavy lifting right to your kitchen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding steps">
+        <h2>How It Works</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="step-number">1</div>
+                <h3>Sign Up</h3>
+                <p>Register your profile and save your delivery address for faster bookings.</p>
+            </div>
+            <div class="card">
+                <div class="step-number">2</div>
+                <h3>Book Refill</h3>
+                <p>Enter your cylinder size and quantity. Choose your preferred delivery time.</p>
+            </div>
+            <div class="card">
+                <div class="step-number">3</div>
+                <h3>Receive Gas</h3>
+                <p>Track your order status and receive your gas at your doorstep within hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>KWICK GAS</h3>
+        <p>&copy; 2026 KWICK GAS Systems. All rights reserved.</p>
+        <p>Developed for Online Cooking Gas Booking Prototype.</p>
+    </footer>
+
+    <script>
+        // 1. Check for active session
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentUser = localStorage.getItem('currentUser');
+
+            // 2. Redirect logic: If a user is already logged in, 
+            // skip the landing page and go straight to the dashboard.
+            if (currentUser) {
+                const user = JSON.parse(currentUser);
+                if (user.role === 'admin') {
+                    window.location.href = 'admin.html';
+                } else {
+                    window.location.href = 'dashboard.html';
+                }
+            }
+        });
+
+        // Simple logging for prototype tracking
+        console.log("KWICK GAS Offline Prototype Initialized.");
+    </script>
+</body>
+
+</html>
